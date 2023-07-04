@@ -32,6 +32,8 @@ function App(){
       setNum2(null); setOp(pressed)
     }
     }
+
+    console.log("testing")
   
   return(
   <div className='calculator' style={{display: 'flex',
