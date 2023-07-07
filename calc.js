@@ -11,6 +11,8 @@ function App(){
     }
   }
   
+
+  console.log('check for syntax')
   function handleOp(pressed){
      if(pressed === 'AC') {
        setOp(''); setNum1(0); setNum2(null)
@@ -33,7 +35,6 @@ function App(){
     }
     }
 
-    console.log("testing")
   
   return(
   <div className='calculator' style={{display: 'flex',
