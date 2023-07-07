@@ -15,13 +15,35 @@ function App(){
   console.log('check for syntax')
   
   function handleOp(pressed) {
-    if(pressed === 'AC') {setOp(''); setNum1(0); setNum2(null)}
-    else if(op === '') {setOp(pressed)} 
-    else if (pressed === '=' && num2 !== null){setOp(''); setNum1(eval(Number(num1) + op + Number(num2))); setNum2(null)} 
-    else if(num2 !== null && op !== '' && num2 !== '-'){setNum1(eval(Number(num1) + op + Number(num2))); setNum2(null); setOp(pressed);} 
+    if(pressed === 'AC') {
+      setOp(''); 
+      setNum1(0); 
+      setNum2(null)
+    }
+    else if(op === '') {
+      setOp(pressed)
+    } 
+    else if (pressed === '=' && num2 !== null){
+      setOp(''); 
+      setNum1(eval(Number(num1) + op + Number(num2))); 
+      setNum2(null)
+    } 
+    else if(num2 !== null && op !== '' && num2 !== '-'){
+      setNum1(eval(Number(num1) + op + Number(num2))); 
+      setNum2(null); 
+      setOp(pressed);
+    } 
     else if(op !== '' && num2 === null){
-    if(pressed === '-'){setNum2(pressed)} else {setOp(pressed)}} 
-    else if(num2 !== null) {setNum2(null); setOp(pressed)}
+      if(pressed === '-'){
+        setNum2(pressed)
+      } else {
+        setOp(pressed)
+      }
+    } 
+    else if(num2 !== null) {
+      setNum2(null); 
+      setOp(pressed)
+    }
   }
 
   
