@@ -11,9 +11,6 @@ function App(){
     }
   }
   
-
-  console.log('check for syntax')
-  
   function handleOp(pressed) {
     if(pressed === 'AC') {
       setOp(''); 
