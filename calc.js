@@ -3,6 +3,7 @@ function App(){
   const [num1, setNum1] = React.useState(0)
   const [num2, setNum2] = React.useState(null)
 
+  // Handles numbers pressed
   function handleNum(pressed){
     if(op == ''){
    num1 == 0 && pressed !== '.' ? setNum1(String(pressed)) : !String(num1).includes('.') ? setNum1(String(num1) + String(pressed)) : pressed !== '.' ? setNum1(String(num1) + String(pressed)) : console.log('float')
@@ -10,7 +11,8 @@ function App(){
       num2 == null && pressed !== '.' ? setNum2(String(pressed)) : !String(num2).includes('.') ? setNum2(String(num2) + String(pressed)) : pressed !== '.' ? setNum2(String(num2) + String(pressed)) : console.log('float')
     }
   }
-  
+
+  // Handles operators pressed
   function handleOp(pressed) {
     if(pressed === 'AC') {
       setOp(''); 
